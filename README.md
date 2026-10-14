@@ -1,60 +1,79 @@
-# Law Chat Bot Vibe
+# PeopleFirst Legal AI
 
-> **AI-powered Legal Intelligence for Indian Citizens** — Ask any legal question, understand your rights, and get instant guidance powered by NLP and RAG.
+### Empowering Citizens with Legal Knowledge
+
+> An AI-powered legal guidance platform built to help every Indian citizen understand their rights, navigate legal processes, and access justice — without needing a lawyer.
 
 ---
 
 ## Screenshots
 
 ### Dashboard
-![Law Chat Bot Vibe - Dashboard](screenshots/dashboard.png)
+![PeopleFirst Legal AI - Dashboard](screenshots/dashboard.png)
 
 ### Chat & Features Panel
-![Law Chat Bot Vibe - Features](screenshots/features.png)
+![PeopleFirst Legal AI - Features](screenshots/features.png)
 
 ---
 
-## Features
+## About the Project
+
+**PeopleFirst Legal AI** is a Flask-based intelligent legal chatbot designed specifically for Indian citizens. It uses Natural Language Processing (NLP) and Retrieval-Augmented Generation (RAG) to provide accurate, real-time legal guidance across key areas of Indian law — including cybercrime, women's safety, tenancy rights, consumer protection, and workplace rights.
+
+The platform is built for accessibility, safety, and clarity — breaking down complex legal language into simple, actionable guidance for common people.
+
+---
+
+## Key Features
 
 | Module | Description |
 |--------|-------------|
-| **Rights Awareness** | NLP-powered chatbot using TF-IDF + cosine similarity over an Indian legal corpus |
-| **Cybercrime Guidance** | Step-by-step evidence checklists for UPI fraud, phishing, identity theft and extortion |
-| **Women's Safety** | POSH Act 2013 guidance, Zero FIR assistance, and emergency helpline interception |
-| **Tenancy and Compliance** | Security deposit calculator under the Model Tenancy Act 2021 |
-| **Doc Simplifier** | Contract risk analyzer — scores clauses as Red / Amber / Green |
-| **Safety Gateway** | Auto PII redaction (Aadhaar/PAN/Phone), disclaimer injection, danger detection |
+| **Rights Awareness Chatbot** | NLP-powered Q&A using TF-IDF + cosine similarity over a curated Indian legal corpus |
+| **Cybercrime Guidance** | Step-by-step evidence checklists for UPI fraud, phishing, identity theft, and ransomware |
+| **Women's Safety Module** | POSH Act 2013 guidance, Zero FIR filing assistance, and live emergency helpline detection |
+| **Tenancy & Compliance** | Security deposit legal cap calculator under the Model Tenancy Act 2021 |
+| **Document Simplifier** | Contract risk analyzer — scores clauses as Red (High) / Amber (Medium) / Green (Safe) |
+| **Safety & Privacy Gateway** | Auto PII redaction, legal disclaimer injection, and danger signal interception |
 
 ---
 
 ## Tech Stack
 
-- **Backend:** Python, Flask
-- **NLP / ML:** NLTK, scikit-learn (TF-IDF + Cosine Similarity)
-- **Frontend:** HTML, CSS, JavaScript
-- **Data:** Custom Indian Legal Corpus (JSON)
+| Layer | Technology |
+|-------|------------|
+| **Backend** | Python 3, Flask |
+| **NLP / ML** | NLTK, scikit-learn (TF-IDF Vectorizer + Cosine Similarity) |
+| **Frontend** | HTML5, CSS3, Vanilla JavaScript |
+| **Data** | Custom Indian Legal Corpus (JSON) |
+| **Safety** | Regex-based PII Redactor, Keyword Danger Detector |
 
 ---
 
-## Installation and Setup
+## Getting Started
 
-### 1. Clone the Repository
+### Prerequisites
+- Python 3.8 or higher
+- pip package manager
+
+### Installation
+
+**1. Clone the Repository**
 ```bash
-git clone https://github.com/your-username/law-chat-bot-vibe.git
-cd law-chat-bot-vibe
+git clone https://github.com/archanaprajith/codealpha_task2.git
+cd codealpha_task2
 ```
 
-### 2. Install Dependencies
+**2. Install Dependencies**
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### 3. Run the App
+**3. Run the Application**
 ```bash
 python app.py
 ```
 
-### 4. Open in Browser
+**4. Open in Your Browser**
 ```
 http://127.0.0.1:5000
 ```
@@ -70,26 +89,45 @@ http://127.0.0.1:5000
 | `/api/chat_module` | POST | Module-specific chatbot (cybercrime, safety, tenancy) |
 | `/api/cybercrime` | POST | Cybercrime evidence checklist generator |
 | `/api/tenant_calculator` | POST | Security deposit legal cap calculator |
-| `/api/simplify` | POST | Contract/document risk analyzer |
+| `/api/simplify` | POST | Contract and document risk analyzer |
 | `/api/safety_logs` | GET | View session safety gateway logs |
 
 ---
 
-## Safety and Ethics
+## Safety & Ethics
 
-- **PII Redaction** — Automatically masks Aadhaar, PAN, and phone numbers
-- **Danger Detection** — Intercepts threat/violence keywords and shows emergency helplines
-- **Disclaimer Injection** — Every response includes a legal disclaimer
-- **Outcome Protection** — Blocks case outcome predictions
+PeopleFirst Legal AI is designed with responsible AI principles:
+
+- **PII Redaction** — Automatically detects and masks Aadhaar numbers, PAN cards, and phone numbers from all responses
+- **Danger Detection** — Instantly intercepts keywords related to violence or emergencies and displays helpline numbers (112, 1091, 181)
+- **Outcome Protection** — Blocks any definitive case outcome predictions to avoid misleading users
+- **Disclaimer Injection** — Every AI response includes a statutory legal disclaimer
+
+---
+
+## Applicable Indian Laws Covered
+
+- Bharatiya Nyaya Sanhita (BNS), 2023
+- Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023
+- Information Technology (IT) Act, 2000
+- Protection of Women from Sexual Harassment (POSH) Act, 2013
+- Model Tenancy Act, 2021
+- Consumer Protection Act, 2019
 
 ---
 
 ## Legal Disclaimer
 
-Law Chat Bot Vibe is an AI legal information assistant, not a lawyer. All information is for educational and awareness purposes under Indian law only. For formal legal advice, please consult a registered legal professional.
+> **PeopleFirst Legal AI** is an AI-powered legal information assistant and is **not a substitute for professional legal advice**. All content is provided for educational and awareness purposes only under Indian law. For formal legal representation or advice, please consult a licensed legal professional or advocate.
 
 ---
 
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
+
+---
+
+## Author
+
+Developed as part of **CodeAlpha Internship Task 2**
